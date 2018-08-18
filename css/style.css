@@ -1,0 +1,311 @@
+/* Basic/General stuff */
+
+body {
+    background: #efefef;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    max-width: 100%;
+    width: 100%;
+
+    --header-height: 65px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: #242424;     
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section {
+    width: 100%;
+    min-height: calc(100vh - var(--header-height));
+    padding-top: var(--header-height);
+}
+
+
+header {
+    display: flex;
+    z-index: 1;
+}
+
+header h1 {
+    line-height: var(--header-height);
+    margin: 0;
+    padding: 0 15px;
+    flex: 1;
+}
+
+footer {
+    height: 45px;
+    background: #242424;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+    margin: 0;
+}
+
+nav a {
+    font-size: 1.5em;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    padding: calc((var(--header-height) - 1.3em) / 2) 7px; /* Why 1.3em?? */
+    line-height: var(--header-height);
+}
+
+nav a:hover {
+    background: black;
+}
+
+section > h1 {
+    font-size: 3em;
+    margin: 10vh 0 15px 0;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+    text-align: center;
+}
+
+section > p {
+    max-width: 70%;
+    margin: 1em auto;
+}
+
+section a {
+    color: #074555;
+}
+section a:hover {
+    color: #091b20;
+}
+
+section {
+    position: relative;
+}
+
+section:first-of-type {
+    z-index: -2;
+}
+section:first-of-type::after {
+    content: "";
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 15px;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+
+    animation-duration: 1s;
+    animation-name: bob;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/* Intro section */
+
+#intro {
+    background: #8e64b6;
+}
+
+#welcome {
+    text-align: center;
+    display:block;
+    font-style: italic;
+}
+
+.love-stuff {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+    background: #dadada;
+    flex-wrap: wrap;
+}
+
+#intro h3 {
+    margin: 2em auto 0em auto;
+    max-width: 75%;
+    padding: 10px 0 0 0;
+    background: #dadada;
+}
+
+.love-stuff > div {
+    margin: 2em;
+}
+
+.love-stuff > div > span {
+    display:block;
+    text-align: center;
+}
+
+.love-stuff .ldBar-label {
+    margin-top: -2em;
+    margin-left: 1.8em;
+}
+
+/* Social section */
+
+#social {
+    background: #6b6bc4;
+}
+
+#social > div {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 75%;
+    margin: 3em auto 0 auto;
+}
+
+#social a {
+    display: block;
+    background: #dadada;
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(43, 43, 43);    
+    transition: color linear 0.2s;
+}
+#social a:hover {
+    color: rgb(129, 37, 125);
+}
+
+#social img {
+    width: 64px;
+    padding: 5px;
+    float: left;
+}
+
+#social .details {
+    text-align: center;
+    padding: 5px;
+}  
+
+#social .website {
+    font-size: 2em;
+}
+
+#social .username {
+    font-size: 0.8em;
+    color: #323232;
+}
+
+/* About section */
+
+#about {
+    background: #619761;
+}
+
+#about dl {
+    padding: 15px 20px;
+    background: #dadada;
+    margin: 1em auto 0 auto;
+    max-width: 70%;
+}
+
+#about dt {
+    font-weight: bold;
+}
+
+#about dt::before {
+    content: "Q: ";
+}
+
+/* #about dd::before {
+    content: "A: ";
+} */
+
+#about dd {
+    margin: 0 1.4em 0.5em 1.4em;
+}
+
+/* Misc */
+
+@keyframes bob {
+    from {
+        bottom: 30px;
+    }
+    to {
+        bottom: 40px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    body {
+        --header-height: 55px;
+    }
+
+    header {
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+
+    header h1 {
+        line-height: initial;
+        flex: 0;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+    nav a {
+        line-height: calc(var(--header-height) * 0.7em);
+        padding: 5px 7px;
+    }
+    section > h1 {
+        font-size: 2em;
+        margin: 15px 0;
+    }
+
+    section > p, .love-stuff, #intro h3, #social > div   {
+        max-width: 90%;
+    }
+    
+    #social a {
+        width: 90%;
+    }
+    #social .website {
+        display: block;
+    }
+    
+}
+
+::selection {
+    background: teal;
+}
+::-moz-selection {
+    background: teal;
+}
