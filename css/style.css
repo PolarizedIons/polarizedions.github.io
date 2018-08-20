@@ -9,6 +9,7 @@ body {
     width: 100%;
 
     --header-height: 65px;
+    --footer-height: 45px;
 }
 
 header {
@@ -45,11 +46,11 @@ header h1 {
 }
 
 footer {
-    height: 45px;
+    height: var(--footer-height);
     background: #242424;
     color: white;
     text-align: center;
-    line-height: 45px;
+    line-height: var(--footer-height);
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2em;
 }
@@ -112,7 +113,7 @@ section {
 section:first-of-type {
     z-index: -2;
 }
-section:first-of-type::after {
+body:not(.error-404) section:first-of-type::after {
     content: "";
     border: solid black;
     border-width: 0 5px 5px 0;
@@ -250,6 +251,19 @@ section:first-of-type::after {
 #about dd {
     margin: 0 1.4em 0.5em 1.4em;
 }
+
+/* 404 Page */
+
+#notfound {
+    background: #9b506d;
+}
+
+body.error-404 section {
+    min-height: initial; /* Fix chrome rendering it weirdly */
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    /* padding-top: 0; */
+}
+
 
 /* Misc */
 
