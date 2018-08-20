@@ -264,6 +264,12 @@ body.error-404 section {
     /* padding-top: 0; */
 }
 
+#notfound img {
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+}
+
 
 /* Misc */
 
@@ -313,6 +319,11 @@ body.error-404 section {
     }
     #social .website {
         display: block;
+    }
+
+    
+    #notfound img {
+        width: 100px;
     }
     
 }
