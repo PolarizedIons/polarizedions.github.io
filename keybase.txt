@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/polarizedions
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.polarizedions.net
+  * I am polarizedions (https://keybase.io/polarizedions) on keybase.
+  * I have a public key ASCviNRBggMjG-iLEfuo5Egu4Ii8bzwl50wrYnwBjBJtswo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f7c545909e726cf229e44b6c19ff43c38a7253715f5d0681198c38c6ad42d1bd0a",
+      "host": "keybase.io",
+      "kid": "0120af88d4418203231be88b11fba8e4482ee088bc6f3c25e74c2b627c018c126db30a",
+      "uid": "4b56d6bc657961675fade974cd6fe119",
+      "username": "polarizedions"
+    },
+    "merkle_root": {
+      "ctime": 1534844339,
+      "hash": "dd1646d423d73c0fee8086ada8c46006b7276a51206ad2669c7aef7e744474e841b8eaf4dc6c2e30851a2e3fcb696223960a93d23591ca9d4f67a1a70d5ae826",
+      "hash_meta": "26f54c5e4e5057c6ef4c6722f06ea4bb3616c81d3f61e8f071b1163fad5d7db3",
+      "seqno": 3491782
+    },
+    "service": {
+      "entropy": "PaOKsx2B9HBZ9BEw6Amktpcm",
+      "hostname": "www.polarizedions.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.5.1"
+  },
+  "ctime": 1534844365,
+  "expire_in": 504576000,
+  "prev": "790bae595267f2d238df944e30ac602f80755c8bd73ecc18a98b0c31ce7de8a1",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgr4jUQYIDIxvoixH7qORILuCIvG88JedMK2J8AYwSbbMKp3BheWxvYWTESpcCFcQgeQuuWVJn8tI435ROMKxgL4B1XIvXPswYqYsMMc596KHEIIm+dFbbHsd53y08nsyFJt/U1nxluKQ3MypxfxGz4hxGAgHCo3NpZ8RA8/DIFQekS7dpqbP/Lf0CVyPKhFwX3vXneLpR/t7vnD05e7/InmSDl8FLgZwdDQ8/cyZVpZxbEOmWInFLEHZkA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAI9jegKJKJudFcdb+mwSaHTQ9cZrSad2a/49knottVyo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/polarizedions
+
+==================================================================
