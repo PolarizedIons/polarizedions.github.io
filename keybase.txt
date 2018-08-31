@@ -4,9 +4,9 @@ https://keybase.io/polarizedions
 
 I hereby claim:
 
-  * I am an admin of https://www.polarizedions.net
+  * I am an admin of https://polarizedions.net
   * I am polarizedions (https://keybase.io/polarizedions) on keybase.
-  * I have a public key ASCviNRBggMjG-iLEfuo5Egu4Ii8bzwl50wrYnwBjBJtswo
+  * I have a public key with fingerprint 6C56 417A E251 6AF4 57BA  704D 849D 5E38 506B 55E1
 
 To do so, I am signing this object:
 
@@ -14,39 +14,63 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "0120f7c545909e726cf229e44b6c19ff43c38a7253715f5d0681198c38c6ad42d1bd0a",
+      "fingerprint": "6c56417ae2516af457ba704d849d5e38506b55e1",
       "host": "keybase.io",
-      "kid": "0120af88d4418203231be88b11fba8e4482ee088bc6f3c25e74c2b627c018c126db30a",
+      "key_id": "849d5e38506b55e1",
+      "kid": "0101753bb88f267838382a80d2b60fe60dcf54074158483212b39f508a083a07d4260a",
       "uid": "4b56d6bc657961675fade974cd6fe119",
       "username": "polarizedions"
     },
     "merkle_root": {
-      "ctime": 1534844339,
-      "hash": "dd1646d423d73c0fee8086ada8c46006b7276a51206ad2669c7aef7e744474e841b8eaf4dc6c2e30851a2e3fcb696223960a93d23591ca9d4f67a1a70d5ae826",
-      "hash_meta": "26f54c5e4e5057c6ef4c6722f06ea4bb3616c81d3f61e8f071b1163fad5d7db3",
-      "seqno": 3491782
+      "ctime": 1535722523,
+      "hash_meta": "52a31453573e44151e0837bdffe8d4a5d38a62568133751ee90601b71fe82a7d",
+      "seqno": 3543358
+    },
+    "revoke": {
+      "sig_ids": [
+        "2f69c2c066ed9badc88714b6374a5cf2e44255e9634d0b76a408f66a7d07a5c30f"
+      ]
     },
     "service": {
-      "entropy": "PaOKsx2B9HBZ9BEw6Amktpcm",
-      "hostname": "www.polarizedions.net",
+      "hostname": "polarizedions.net",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 2
+    "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "2.5.1"
-  },
-  "ctime": 1534844365,
-  "expire_in": 504576000,
-  "prev": "790bae595267f2d238df944e30ac602f80755c8bd73ecc18a98b0c31ce7de8a1",
-  "seqno": 21,
+  "ctime": 1535722531,
+  "expire_in": 157680000,
+  "prev": "559bab29b867b53b372727749c541e7cb45d7cf1eb0789b0eb9817a291da8e10",
+  "seqno": 22,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgr4jUQYIDIxvoixH7qORILuCIvG88JedMK2J8AYwSbbMKp3BheWxvYWTESpcCFcQgeQuuWVJn8tI435ROMKxgL4B1XIvXPswYqYsMMc596KHEIIm+dFbbHsd53y08nsyFJt/U1nxluKQ3MypxfxGz4hxGAgHCo3NpZ8RA8/DIFQekS7dpqbP/Lf0CVyPKhFwX3vXneLpR/t7vnD05e7/InmSDl8FLgZwdDQ8/cyZVpZxbEOmWInFLEHZkA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAI9jegKJKJudFcdb+mwSaHTQ9cZrSad2a/49knottVyo3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+
+owFtk29oV1UYx7f1mzPNtET3ZkreF1q45Pw/5/4gY5BhVDrLJTH0xzn3nLtd99vv
+/rz3bmsbK8pYOUpa0KCsF1YOod5ozBeVNDUQmVi0iqHRnwXRaC/NKFJ77mgE4b0v
+Lvc83+d5vudznvPaittqlta++M4+1drV9lPt1JypaT/0kBz0TGz7veKg1+UWPq5s
+XZqVuiLrFT2ECQplwBn3ke8kEUFIiO8YMyLAfhgyGlClJeFUYh5yi4TC2FewGAht
+GbHYWKS9Zi+MKh0uqSZRJYOyIuCCYakd4VjokHFptETMKuZb7qjiSBjOHYbEzjjN
+M8Cc0anbEsWwBj+lBXu30C/6RlhyaoxSIRFSUXiJVsgSI1DoBLJByBmSDHPFFCWY
+GOqHHCmNFNVIgnWx4LtnoRwzXFhhAsGlL7CQPNTW+ZIFVoQONpwLU5dUdLcDdTUu
+6yQacDaKK6k31Ox1u6Sr7EpJHGc54SCLch3mlEtCOKGwS512lrpdpiGdE00xy4MU
+QGOOHXiSxoahU5ZpboG4IBxIUyoh6nwkEDYSQ5xoacFM6g5UYq9IOaOUK3CQuN64
+y+XN06gD2KVesX3yeY+Ewg9IgIRw1jfaBkpJDGdLJfSBo4b+BLj6gjKLjBSaIRUK
+AU2QBAFFobd3KG+X9EbBQvn8uG6FYUvFZWCsmsRZHMRlCHdmWTUt5niy/mqu73Om
+9G+lkokqFiYGMnpdkkIBwAXK/5GjuNlzz1SjxJWiXMGlUAievI/rzVFy2JUhvlFC
+GhgHKgm8kvkw0djJwDBuZRBiZ5BUvkHO+ArGkvjYauUw+g8lIeBTd0BNAFjRWU/i
+vKFlh2ppoaZ2ac26tRsK5adaBmZ37b+65+Pq44u3rL4uv2I1y25ftbhy5NmGG37w
+ye7GHR9MdOqjDXMvR1Mnz028PXCq7szPwyce/fuXwrfTz7Ws2Xr2kadHB8Y/ax85
+GO59t3X5A2/Nj21ctyT8/PDs95PiwbuOpTOvbC58tbrti/DLP8emnyzft7vRH5/5
+o/G71uJ4Het7YUmFX91emtt4x0g21vL+mxem0t7WlaN7ZpuOT4xt+rS+rmnw9OWd
+J/bvuLj1Lzw+X7v8yMjctdWFA/bkJTH1xNp6deHe6SZ8rO3Spt/u/n3Ftu3XHl45
+3B/cc/2b0emD929bf7Pw64abP5yfPn751TfqHzvc+vV7ZvPZM+t37hs+Nb9mpv/0
+rpr21/tK7ErPR3eu4ud30snqj97FD8813Lgy+9L1fwA=
+=jjVb
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
@@ -54,3 +78,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/polarizedions
 
 ==================================================================
+
