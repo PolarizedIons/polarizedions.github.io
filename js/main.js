@@ -29,7 +29,7 @@ if (NOW.getDate() == 25 && NOW.getMonth() == 11) { // 25 Dec
 }
 else if (NOW.getDate() == 31 && NOW.getMonth() == 9) { // 31 Oct
     welcomeMsgs.push("Happy Halloween!");
-    welcomeMsgs.push("Spooky Scary Skelatons Everywhere!");
+    welcomeMsgs.push("Spooky Scary Skeletons Everywhere!");
     welcomeMsgs.push("*plays monstermash on repeat*");
     welcomeMsgs.push("CANDYYYYY!");
 
