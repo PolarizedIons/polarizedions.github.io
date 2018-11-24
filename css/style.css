@@ -229,27 +229,29 @@ body:not(.error-404) section:first-of-type::after {
     background: #619761;
 }
 
-#about dl {
+#about .QnA {
     padding: 15px 20px;
     background: #dadada;
     margin: 1em auto 0 auto;
     max-width: 70%;
 }
 
-#about dt {
+#about .q {
     font-weight: bold;
+    display: block;
 }
 
-#about dt::before {
+#about .q::before {
     content: "Q: ";
 }
 
-/* #about dd::before {
+/* #about .a::before {
     content: "A: ";
 } */
 
-#about dd {
+#about .a {
     margin: 0 1.4em 0.5em 1.4em;
+    display: block;
 }
 
 /* 404 Page */
