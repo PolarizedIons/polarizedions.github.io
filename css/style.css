@@ -195,17 +195,48 @@ section:first-of-type {
     margin: 3em auto 0 auto;
 }
 
+#social .social-block {
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+
+    transition: transform cubic-bezier(0, 0, 0.3, 1) 0.4s;
+    transform: scale(0.9);
+}
+
+#social .social-block::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #000;
+
+    box-shadow: 0 3px 3px 5px #000;
+
+    transition: transform cubic-bezier(0, 0, 0.3, 1) 0.4s;
+    transform: translateY(0px);
+    opacity: 0.4;
+    
+}
+
+#social .social-block:hover {
+    transform: scale(1);
+}
+
+#social .social-block:hover::before {
+    transform: translateY(6px);
+}
+
 #social a {
+    text-decoration: none;
+    position: relative;
     display: block;
     background: #dadada;
-    margin: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    color: rgb(43, 43, 43);    
-    transition: color linear 0.2s;
-}
-#social a:hover {
-    color: rgb(129, 37, 125);
+    color: #323232;
+    padding: 5px;
 }
 
 #social img {
