@@ -10,6 +10,10 @@ body {
 
     --header-height: 65px;
     --footer-height: 45px;
+
+    --intro-color: #8e64b6;
+    --social-color: #6b6bc4;;
+    --about-color: #619761;
 }
 
 header {
@@ -32,6 +36,7 @@ section {
     padding-top: var(--header-height);
 }
 
+/* HEADER STUFF */
 
 header {
     display: flex;
@@ -44,6 +49,8 @@ header h1 {
     padding: 0 15px;
     flex: 1;
 }
+
+/* FOOTER STUFF */
 
 footer {
     height: var(--footer-height);
@@ -62,6 +69,8 @@ footer a {
     color: white;
 }
 
+/* NAV BAR STUFF */
+
 nav {
     display: flex;
 }
@@ -70,22 +79,72 @@ nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    padding: 0 15px;
     margin: 0;
 }
 
-nav a {
-    font-size: 1.5em;
-    vertical-align: middle;
-    color: white;
-    text-decoration: none;
-    padding: calc((var(--header-height) - 1.3em) / 2) 7px; /* Why 1.3em?? */
-    line-height: var(--header-height);
+nav li {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-nav a:hover {
-    background: black;
+nav a {
+    padding: calc(var(--header-height) / 3.6) 10px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    line-height: var(--header-height);
+    height: var(--header-height);
+    overflow: hidden;
+    position: relative;
 }
+
+nav a .hover-reveal {
+    display: inline-block;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: var(--header-height);
+    width: 160%;
+    text-align: center;
+
+    overflow: hidden;
+
+    transform: skew(-30deg) translateX(-150%);
+
+    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+}
+
+nav a .hover-reveal[data-nav='intro'] {
+    background: var(--intro-color);
+}
+
+nav a .hover-reveal[data-nav='social'] {
+    background: var(--social-color);
+}
+
+nav a .hover-reveal[data-nav='about'] {
+    background: var(--about-color);
+}
+
+nav a:hover .hover-reveal, nav a.active .hover-reveal {
+    transform: skew(-30deg) translateX(-50%);
+}
+
+nav a .hover-reveal .content {
+    display: inline-block;
+    width: 100%;
+    transform: translateX(100%) skew(30deg);
+
+    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+}
+
+nav a:hover .hover-reveal .content, nav a.active .hover-reveal .content {
+    transform: translateX(0%) skew(30deg);
+}
+
+/* GENERAL SECTION STUFF */
 
 section > h1 {
     font-size: 3em;
@@ -140,7 +199,7 @@ section:first-of-type {
 /* Intro section */
 
 #intro {
-    background: #8e64b6;
+    background: var(--intro-color);
 }
 
 #welcome {
@@ -183,7 +242,7 @@ section:first-of-type {
 /* Social section */
 
 #social {
-    background: #6b6bc4;
+    background: var(--social-color);
 }
 
 #social > div {
@@ -262,7 +321,7 @@ section:first-of-type {
 /* About section */
 
 #about {
-    background: #619761;
+    background: var(--about-color);
 }
 
 #about .QnA {
@@ -320,6 +379,16 @@ body.error-404 section {
     }
 }
 
+::selection {
+    background: teal;
+    color: #cacaca;
+}
+::-moz-selection {
+    background: teal;
+    color: #cacaca;
+}
+
+/* Mobile */
 
 @media (max-width: 450px) {
     body {
@@ -364,11 +433,4 @@ body.error-404 section {
         width: 100px;
     }
     
-}
-
-::selection {
-    background: teal;
-}
-::-moz-selection {
-    background: teal;
 }
