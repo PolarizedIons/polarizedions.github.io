@@ -410,8 +410,20 @@ body.error-404 section {
     }
     nav a {
         line-height: calc(var(--header-height) * 0.7em);
-        padding: 5px 7px;
+        /* padding: 5px 7px; */
     }
+
+
+
+    nav a .hover-reveal {
+        display: none;
+    }
+
+    nav a:hover, nav a.active {
+        background: #121212;
+    }
+    
+
     section > h1 {
         font-size: 2em;
         margin: 15px 0;
