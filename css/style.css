@@ -113,7 +113,7 @@ nav a .hover-reveal {
 
     transform: skew(-30deg) translateX(-150%);
 
-    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 0.5s;
 }
 
 nav a .hover-reveal[data-nav='intro'] {
@@ -137,7 +137,7 @@ nav a .hover-reveal .content {
     width: 100%;
     transform: translateX(100%) skew(30deg);
 
-    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+    transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 0.5s;
 }
 
 nav a:hover .hover-reveal .content, nav a.active .hover-reveal .content {
