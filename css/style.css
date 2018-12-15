@@ -352,7 +352,7 @@ body.error-404 section {
         max-width: 90%;
     }
     
-    #social a {
+    #social .social-block {
         width: 90%;
     }
     #social .website {
