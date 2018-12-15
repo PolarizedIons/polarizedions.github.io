@@ -10,22 +10,26 @@ function downArrow() {
 function scrollSpy() {
     // init
     document.querySelector("nav a").setAttribute('class', 'active');
-    const headerHeight = document.querySelector("header").style.height;
-    const sections = {};
-    for (section of document.querySelectorAll("section")) {
-        sections[section.id] = section.offsetTop;
-    };
+    const headerHeight = document.querySelector("header").clientHeight;
+    console.log('header height', headerHeight);
+    const sections = document.querySelectorAll("section");
+    sections[0].id
 
     const update = () => {
         let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-        for (id in sections) {
-            if (sections[id] <= scrollPosition + headerHeight) {
-                document.querySelector('nav a.active').setAttribute('class', ' ');
-                document.querySelector('nav a[href*=' + id + ']').setAttribute('class', 'active');
-                
+        let newActive = null;
+        for (section of sections) {
+            if (section.offsetTop <= scrollPosition + headerHeight ) {
+                newActive = section;
+            }
+            else {
+                break;
             }
         }
+
+        document.querySelector('nav a.active').setAttribute('class', ' ');
+        document.querySelector('nav a[href*=' + newActive.id + ']').setAttribute('class', 'active');
     };
 
     window.onscroll = update;
