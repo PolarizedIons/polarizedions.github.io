@@ -1,6 +1,6 @@
 function downArrow() {
     const elDownArrow = document.querySelector("#more-arrow");
-    const elSecondSection = document.querySelector("section")[1];
+    const elSecondSection = document.querySelectorAll("section")[1];
     elDownArrow.onclick = () => {
         window.scrollTo(0, elSecondSection.offsetTop);
     };
@@ -11,9 +11,7 @@ function scrollSpy() {
     // init
     document.querySelector("nav a").setAttribute('class', 'active');
     const headerHeight = document.querySelector("header").clientHeight;
-    console.log('header height', headerHeight);
     const sections = document.querySelectorAll("section");
-    sections[0].id
 
     const update = () => {
         let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
