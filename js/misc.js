@@ -1,15 +1,17 @@
 function scrollSpy() {
     // init
-    document.querySelector("nav a").setAttribute('class', 'active');
-    const headerHeight = document.querySelector("header").clientHeight;
-    const sections = document.querySelectorAll("section");
+    document.querySelector('nav a').setAttribute('class', 'active');
+
+    const headerHeight = document.querySelector('header').clientHeight;
+    const sections = document.querySelectorAll('section');
 
     const update = () => {
         let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        let offset = scrollPosition + headerHeight;
 
         let newActive = null;
         for (section of sections) {
-            if (section.offsetTop <= scrollPosition + headerHeight ) {
+            if (section.offsetTop <= offset) {
                 newActive = section;
             }
             else {
@@ -29,8 +31,9 @@ function init() {
     scrollSpy();
 }
 
-if (document.readyState === "loading") {  // Loading hasn't finished yet
-    document.addEventListener("DOMContentLoaded", init);
-} else {  // `DOMContentLoaded` has already fired
+if (document.readyState === 'loading') {  // Loading hasn't finished yet
+    document.addEventListener('DOMContentLoaded', init);
+}
+else {  // `DOMContentLoaded` has already fired
     init();
 }
