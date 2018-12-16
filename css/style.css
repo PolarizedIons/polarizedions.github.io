@@ -376,26 +376,40 @@ body.error-404 section {
 
     header h1 {
         line-height: initial;
+        font-size: 1.2rem;
+        text-align: center;
         flex: 0;
+    }
+
+    nav {
+        margin-top: 5px;
+        flex: 1;
     }
 
     nav ul {
         margin: 0 auto;
+        padding: 0;
     }
     nav a {
         line-height: calc(var(--header-height) * 0.7em);
-        /* padding: 5px 7px; */
+        padding: 3px 5px;
     }
-
 
     nav a .hover-reveal {
-        display: none;
-    }
-
-    nav a:hover, nav a.active {
-        background: #121212;
+        transform: skew(-30deg) translate(-155%, 5%);
     }
     
+    nav a:hover .hover-reveal, nav a.active .hover-reveal {
+        transform: skew(-30deg) translate(-55%, 5%);
+    }
+
+    nav a .hover-reveal .content {
+        transform: translateX(95%) skew(30deg);
+    }
+
+    nav a:hover .hover-reveal .content, nav a.active .hover-reveal .content {
+        transform: translateX(-5%) skew(30deg);
+    }
 
     section > h1 {
         font-size: 2em;
