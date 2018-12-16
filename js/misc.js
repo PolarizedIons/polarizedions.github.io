@@ -1,12 +1,3 @@
-function downArrow() {
-    const elDownArrow = document.querySelector("#more-arrow");
-    const elSecondSection = document.querySelectorAll("section")[1];
-    elDownArrow.onclick = () => {
-        window.scrollTo(0, elSecondSection.offsetTop);
-    };
-    elDownArrow.style.cursor = 'pointer';
-}
-
 function scrollSpy() {
     // init
     document.querySelector("nav a").setAttribute('class', 'active');
@@ -35,7 +26,6 @@ function scrollSpy() {
 }
 
 function init() {
-    downArrow();
     scrollSpy();
 }
 

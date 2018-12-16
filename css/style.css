@@ -176,25 +176,6 @@ section:first-of-type {
     z-index: 0;
 }
 
-/*body:not(.error-404) section:first-of-type::after {*/
-#more-arrow {
-    content: "";
-    border: solid black;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 15px;
-    position: fixed;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%) rotate(45deg);
-    z-index: 1;
-
-    animation-duration: 1s;
-    animation-name: bob;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
 
 /* Intro section */
 
@@ -216,6 +197,8 @@ section:first-of-type {
     margin: 0 auto;
     background: #dadada;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 3;
 }
 
 #intro h3 {
@@ -370,15 +353,6 @@ body.error-404 section {
 
 /* Misc */
 
-@keyframes bob {
-    from {
-        bottom: 30px;
-    }
-    to {
-        bottom: 40px;
-    }
-}
-
 ::selection {
     background: teal;
     color: #cacaca;
@@ -412,7 +386,6 @@ body.error-404 section {
         line-height: calc(var(--header-height) * 0.7em);
         /* padding: 5px 7px; */
     }
-
 
 
     nav a .hover-reveal {
