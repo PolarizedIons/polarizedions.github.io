@@ -39,7 +39,15 @@ function populateMessages() {
 
         notfoundMsgs.push("Nothing here, maybe last year?");
     }
-    else {
+    
+
+    // make special days not have a 100% of having special messages
+    if (Math.random() <= 0.2) {
+        welcomeMsgs = [];
+        notfoundMsgs = [];
+    }
+
+    if (welcomeMsgs.length === 0) {
         welcomeMsgs.push(
             "Welcome to my little site OwO",
             "Please wipe your feet on the way in!",
@@ -50,7 +58,9 @@ function populateMessages() {
             "Fus Ro Da!",
             "Zin krif horvut se suleyk. What is better - to be born good, or to overcome your evil nature through great effort? &ndash;Paarthurnax",
         );
+    }
 
+    if (notfoundMsgs.length === 0) {
         notfoundMsgs.push(
             "OwO, this isn't what you were looking for, was it?",
             "Nope, not here. I checked.",
@@ -79,7 +89,7 @@ function setContent(id, value) {
     }
 }
 
-async function setMessages() {
+function setMessages() {
     populateMessages();
 
     setContent("welcome", randomElement(welcomeMsgs))
