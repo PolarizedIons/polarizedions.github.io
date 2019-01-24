@@ -27,8 +27,14 @@ function scrollSpy() {
     update();
 }
 
+function enableEmailLink() {
+    let emailA = document.getElementById("email");
+    emailA.setAttribute("href", "mailto:polarizedions@gmail.com");
+}
+
 function init() {
     scrollSpy();
+    enableEmailLink();
 }
 
 if (document.readyState === 'loading') {  // Loading hasn't finished yet
